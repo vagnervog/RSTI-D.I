@@ -377,6 +377,18 @@ const copiaListaDeNomes = [...listaDeNomes]
     console.log(copiaListaDeNomes)
 */
 //                       exercicio 4 (aula 7)
+/*
+const pessoa = {
+    nome: 'Vagner',
+    idade: 42,
+    comidasPreferidas: ["Pizza", " Churrasco", " e Lasanha"],
+    melhorAmigo: {
+        nome: 'Fúria',
+        idade: 8,
+    }
+}
+console.log(`O nome de pessoa é ${pessoa.nome} e suas comidas preferidas são ${pessoa.comidasPreferidas}. Seu melhor amigo se chama ${pessoa.melhorAmigo.nome} e tem ${pessoa.melhorAmigo.idade} anos.`)
+*/
 
 
 
