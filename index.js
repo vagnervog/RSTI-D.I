@@ -389,7 +389,7 @@ const pessoa = {
 }
 console.log(`O nome de pessoa é ${pessoa.nome} e suas comidas preferidas são ${pessoa.comidasPreferidas}. Seu melhor amigo se chama ${pessoa.melhorAmigo.nome} e tem ${pessoa.melhorAmigo.idade} anos.`)
 */
-
+//                           AULA 8
 
 
 
