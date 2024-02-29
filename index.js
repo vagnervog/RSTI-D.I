@@ -381,20 +381,123 @@ const copiaListaDeNomes = [...listaDeNomes]
 const pessoa = {
     nome: 'Vagner',
     idade: 42,
-    comidasPreferidas: ["Pizza", " Churrasco", " e Lasanha"],
-    melhorAmigo: {
-        nome: 'Fúria',
-        idade: 8,
-    }
+    estiloMusical:"Rock",
 }
-console.log(`O nome de pessoa é ${pessoa.nome} e suas comidas preferidas são ${pessoa.comidasPreferidas}. Seu melhor amigo se chama ${pessoa.melhorAmigo.nome} e tem ${pessoa.melhorAmigo.idade} anos.`)
+console.log(`O nome da pessoa é ${pessoa.nome}, e ela tem ${pessoa.idade} anos e gosta muito de ${pessoa.estiloMusical}`);
+
+function exercicio4(objetoPessoa, arrayComidas, objetoMelhorAmigo){
+    var novoObjeto = {...objetoPessoa, comidasPreferidas: arrayComidas, melhorAmigo: objetoMelhorAmigo};
+    console.log(`O nome da pessoa é ${novoObjeto.nome} e suas comidas preferidas são ${novoObjeto.comidasPreferidas[0]}, ${novoObjeto.comidasPreferidas[1]}, ${novoObjeto.comidasPreferidas[2]}. Seu melhor amigo se chama ${novoObjeto.melhorAmigo.nome} e tem ${novoObjeto.melhorAmigo.idade} anos.`);
+}
+exercicio4(pessoa, ["arroz", "feijão", "carne"], {nome: "João", idade:10});
 */
 //                           AULA 8
+/*
+let condicao1 = true;
+if(condicao1){
+    console.log('Entrei no if 1');
+}
+let condicao2 = false;
+if(condicao2){
+    console.log('Entrei no if 2');
+}
+*/
+//                   exercicio 1 (aula 8)
+/*
+function numeros(num1, num2){
+    if(num1 === num2){
+        console.log("SUCESSO");
+    }
+}
+numeros(prompt("Digite num1"), prompt("Digite num2"));
+*/
+//                   exercicio 1.1 (aula 8)
+/*
+function fulano(){
+    var nome = prompt('Digite o seu nome:');
+    var idade = prompt('Qual a sua idade?');
+        if(idade > 18){
+            console.log(`${nome}, você pode dirigir`);
+        }else{
+            console.log(`${nome}, você não pode dirigir`);
+        }
+}
+fulano()
+*/                     
+/*
+function podeDirigir(nome, idade){
+    if(idade >= 18){
+        return `${nome}, você pode dirigir`;
+    }
+}
+console.log(podeDirigir(prompt("Digite o seu nome"),prompt("Qual a sua idade?")));
+*/
+/*
+let condicao = false
+if(condicao){
+    console.log('Entrei no if');
+}else{
+    console.log('Entrei no else');
+}
+*/
+//                      exercicio 2 (aula 8)
+/*
+function comparaNumeros(num1, num2){
+    if(num1 === num2){
+        return `Os números são iguais`;
+    }else{
+        return `Os números são diferentes`
+    }
+}
+console.log(comparaNumeros(prompt("Digite um número"), prompt("Digite outro número")));
+*/
+//               >>> exemplo de if + else + if <<<
+/*
+let condicao1 = false
+let condicao2 = true
 
+if (condicao1){
+    console.log('Entrei no if')
+}else{
+//  como o valor da condicional é false,
+//  o codigo do else será executado
+    if (condicao2){
+    // como o valor da condicao2 é true,
+    // executaremos esse código
+    console.log('Entrei no if 2')    
+    }
+}
+*/
+//                      exercicio 3 (aula 8)
+/*
+function comparaNumeros(num1, num2){
+    if(num1 < num2){
+        return `O primeiro número é menor que o sugundo`
+    }
+    if(num1 > num2){
+        return `O primeiro número é maior que o segundo`
+    }else{
+        return `Os números são iguais`
+    }
+}
+console.log(comparaNumeros(prompt("Digite u número"), prompt("Digite outro número")));
+*/
+//                       
+/*
+function numeros(){
+    var num1 = prompt('Digite um número');
+        console.log(num1)
+    var num2 = prompt('Digite outro número');
+        console.log(num2)
 
-
-
-
-
-
+    if(num1 > num2){
+        console.log('Pimeiro número é maior que o segundo número');
+    }if(num1 < num2){
+        console.log('Segundo número é maior que o primeiro número');
+    }else if(num1 === num2){
+        console.log('Os números são iguais');
+    }
+}
+numeros()
+*/
 
