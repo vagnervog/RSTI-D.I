@@ -578,10 +578,12 @@ console.log(aluno(prompt("Já passou pelo ensino médio?"), Number(prompt("Qual 
 */
 //                       exercicio complementar (aula 8)
 
-function calculadora(num1, num2, multiplicacaoS){
-    return num1 * num2
+function calculadora(){
+    let num1 = 2
+    let num2 = 8
+    let resultado = num1 + num2
 }
-var resultado = calculadora(4, 5)
+//var resultado = calculadora(4, 5)
     console.log(resultado)
 
 
