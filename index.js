@@ -204,7 +204,7 @@ nomeA('Adão');
 function nums(num1, num2){
     return num1 + num2   
 }
-var numsTotal= nums(2, 3) // 5
+var numsTotal = nums(2, 3) // 5
     console.log(numsTotal)
 
 /*                             
@@ -451,7 +451,7 @@ function comparaNumeros(num1, num2){
 }
 console.log(comparaNumeros(prompt("Digite um número"), prompt("Digite outro número")));
 */
-//               >>> exemplo de if + else + if <<<
+//                              >>> EXEMPLO de if + else + if <<<
 /*
 let condicao1 = false
 let condicao2 = true
@@ -472,7 +472,7 @@ if (condicao1){
 /*
 function comparaNumeros(num1, num2){
     if(num1 < num2){
-        return `O primeiro número é menor que o sugundo`
+        return `O primeiro número é menor que o segundo`
     }
     if(num1 > num2){
         return `O primeiro número é maior que o segundo`
@@ -480,7 +480,7 @@ function comparaNumeros(num1, num2){
         return `Os números são iguais`
     }
 }
-console.log(comparaNumeros(prompt("Digite u número"), prompt("Digite outro número")));
+console.log(comparaNumeros(prompt("Digite um número"), prompt("Digite outro número")));
 */
 //                       
 /*
@@ -500,4 +500,94 @@ function numeros(){
 }
 numeros()
 */
+//                                     SWITCH CASE (aula 8)
+/*
+let paisDeOrigem
+if (paisDeOrigem === 'Brasil'){
+    console.log('brasileiro')
+} else if (paisDeOrigem === 'EUA'){
+    console.log('norte americano')
+} else if (paisDeOrigem === 'Inglaterra'){
+    console.log('inglês')
+} else if (paisDeOrigem === 'França'){
+    console.log('Francês')
+} else if (paisDeOrigem === 'Itália'){
+    console.log('italiano')
+} else if (paisDeOrigem === 'Canadá'){
+    console.log('canadence')
+} else {
+    console.log('nacionalidade não encontrada')
+}
+*/
+/*
+let paisDeOrigem
+switch (paisDeOrigem){
+    case 'Brasil':
+        console.log('brasileiro')
+        break
+    case 'EUA':
+        console.log('norte americano')
+        break
+    case 'Inglaterra':
+        console.log('inglês')
+        break
+    default:
+        console.log('nacionalidade não encontrada')
+        break            
+}
+*/
+//                      exercicio 4 (aula 8)
+/*
+let pokemon = prompt("Escolha um pokemon")
+switch (pokemon){
+    case 'Charmander':
+        console.log('fogo');
+        break;
+    case 'Bulbasauro':
+        console.log('planta e veneno');
+        break;
+    case 'Squirtle':
+        console.log('água');
+        break;
+    default:
+        console.log('Pokemon não encontrado');            
+}
+*/
+//              >>>>    exemplo de operadores lógicos e condicionais    <<<<
+/*
+let condicao1 = true
+let condicao2 = false
+
+if (condicao1 && condicao2){
+    // entra aqui se ambas forem true
+}
+if (!condicao1){
+    // entra aqui se condicao1 for false
+}
+*/
+//                       exercicio 5 (aula 8)
+/*
+function aluno(ensinoMedio, idade, outraFaculdade){
+    if ((ensinoMedio === "sim") && (idade >= 18) && (outraFaculdade === "nao")){
+     return 'Você pode estudar nesta faculdade'
+    } else {
+        return 'Você não pode estudar nesta faculdade'
+    }  
+}
+console.log(aluno(prompt("Já passou pelo ensino médio?"), Number(prompt("Qual a sua idade?")), prompt("Estuda em outra faculdade?")));
+*/
+//                       exercicio complementar (aula 8)
+
+function calculadora(num1, num2, multiplicacaoS){
+    return num1 * num2
+}
+var resultado = calculadora(4, 5)
+    console.log(resultado)
+
+
+
+
+
+
+
 
