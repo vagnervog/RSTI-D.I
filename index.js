@@ -568,7 +568,7 @@ if (!condicao1){
 //                       exercicio 5 (aula 8)
 /*
 function aluno(ensinoMedio, idade, outraFaculdade){
-    if ((ensinoMedio === "sim") && (idade >= 18) && (outraFaculdade === "nao")){
+    if ((ensinoMedio === "sim") && (idade >= 18) && (outraFaculdade === "não")){
      return 'Você pode estudar nesta faculdade'
     } else {
         return 'Você não pode estudar nesta faculdade'
@@ -577,15 +577,21 @@ function aluno(ensinoMedio, idade, outraFaculdade){
 console.log(aluno(prompt("Já passou pelo ensino médio?"), Number(prompt("Qual a sua idade?")), prompt("Estuda em outra faculdade?")));
 */
 //                       exercicio complementar (aula 8)
-
-function calculadora(){
-    let num1 = 2
-    let num2 = 8
-    let resultado = num1 + num2
+//   1.
+/*
+function calculadora(num1, num2){
+    return num1 * num2;
 }
-//var resultado = calculadora(4, 5)
+var resultado = calculadora(2, 5)
     console.log(resultado)
+*/
+//   2.
 
+function mediaNotas(nota1, nota2, nota3, nota4, nota5){
+    return nota1 + nota2 + nota3 + nota4 + nota5 
+}
+var notasAluno = [3, 5, 6, 7, 8]
+console.log(notasAluno)
 
 
 
