@@ -576,26 +576,71 @@ function aluno(ensinoMedio, idade, outraFaculdade){
 }
 console.log(aluno(prompt("Já passou pelo ensino médio?"), Number(prompt("Qual a sua idade?")), prompt("Estuda em outra faculdade?")));
 */
+//                       exercicio 5 (aula 8)
+/*
+function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
+    if(ensinoMedio === "sim" || ensinoMedio === "Sim")
+    {ensinoMedio = true;}else{ensinoMedio = false;}
+
+    if(faculdade === "sim" || faculdade === "Sim")
+    {faculdade = true;}else{faculdade = false;}
+
+    if(idade >= 18 && ensinoMedio && !faculdade){
+        return "Você pode entrar na faculdade";
+    }
+    else{return "Você não pode entrar na faculdade";}
+}
+console.log(podeEntrarNaFaculdade(prompt("Você concluiu o ensino médio?"),Number(prompt("Qual a sua idade?")),prompt("Você já estuda em uma faculdade?")));
+*/
 //                       exercicio complementar (aula 8)
 //   1.
 /*
-function calculadora(num1, num2){
-    return num1 * num2;
+function calculadora(num1, num2, operacao){
+    if(num1 - num2){
+        return num1 - num2;
+    }if(num1 + num2){
+        return num1 + num2;
+    }if(num1 * num2){
+        return num1 * num2;
+    }if(num1 / num2){
+        return num1 / num2;
+    }
 }
-var resultado = calculadora(2, 5)
-    console.log(resultado)
+calculadora(2, 5);
+    
 */
 //   2.
-
+/*
 function mediaNotas(nota1, nota2, nota3, nota4, nota5){
     return nota1 + nota2 + nota3 + nota4 + nota5 
 }
 var notasAluno = [3, 5, 6, 7, 8]
 console.log(notasAluno)
+*/
+//                               EXEMPLO(AULA DIA 06/03)
+/*
+function calculaArea(base, altura){
+    return base * altura;
+}
 
+function calculaAreaTotal(valores = []){
+    var resultado = valores[0] + valores[1] + valores[2] + valores[3];
+    return resultado;
+}
+function calculaValores(valores = []){
+    valores[0] = Number(valores[0]);
+    valores[1] = Number(valores[1]);
 
+    var areaCalculada = calculaArea(valores[0], valores[1])
+    var areaTotal = calculaAreaTotal([areaCalculada,areaCalculada,areaCalculada,areaCalculada]);
 
+    return areaTotal;
+}
 
+function pegaValores(){
+    return calculaValores([prompt("Digite a base"), prompt("Digite a altura")]);
+}
 
-
+console.log(pegaValores());
+*/
 
