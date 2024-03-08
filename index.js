@@ -643,4 +643,28 @@ function pegaValores(){
 
 console.log(pegaValores());
 */
+//                                  AULA DIA 08/03
+/*
+ Trocar o oleo do carro
+   * Verificar a quilometragem no odometro.
+   * Se o odometro estiver marcando 5 mil kms a mais desde a ultima troca, realizar a troca por quilometragem.
+   * Caso a quilometragem nao tenha ultrapassado a marca dos 5 mil, conferir em que mes foi efetuada a ultima troca de oleo.
+   * Se a ultima troca foi feita a 6 meses ou mais, fazer a troca de oleo por tempo. 
+   * Verificar a quantidade de oleo que é utilizada no motor.
+   * Verificar qual o tipo de oleo que é utilizado no motor.
+   * Comprar o oleo
+   * Comprar o filtro de oleo
+   * Separar as ferramentas para fazer a troca do oleo
+   * Colocar um recipiente embaixo do motor para receber o oleo velho
+   * Abrir a tampa do oleo na tampa de valvulas do motor
+   * Abrir o bujao no carter para escoar o oleo
+   * Remover o filtro velho do bloco do motor
+   * Limpar a base que recebe o filtro no motor
+   * Melejar com oleo a base do filtro novo antes de rosqueá-lo no motor
+   * Rosquear o filtro novo ao motor
+   * Se já tiver escoado todo o oleo velho fechar o bujao no carter
+   * Retirar o recipiente com oleo velho de baixo do motor
+   * Colocar a litragem de oleo correta no motor
+   *  
+
 
