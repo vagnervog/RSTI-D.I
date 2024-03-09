@@ -595,28 +595,51 @@ console.log(podeEntrarNaFaculdade(prompt("Você concluiu o ensino médio?"),Numb
 //                       exercicio complementar (aula 8)
 //   1.
 /*
-function calculadora(num1, num2, operacao){
-    if(num1 - num2){
-        return num1 - num2;
-    }if(num1 + num2){
-        return num1 + num2;
-    }if(num1 * num2){
-        return num1 * num2;
-    }if(num1 / num2){
-        return num1 / num2;
+function calculadora(num1, num2){
+    
+    return num1 * num2
+}
+var resultado = calculadora(3, 5)
+console.log(resultado)
+  
+   */
+
+
+  
+function calculator(num1_3 = prompt('Digite o número 1'), operador = prompt('Digite o operador'), num2_3 = prompt('Digite o número 2')) {
+    switch (operador) {
+        case '*':
+            console.log(num1_3 * num2_3);
+            break;
+        case '/':
+            console.log(num1_3 / num2_3);
+            break;
+        case '+':
+            console.log(num1_3 + num2_3);
+            break;
+        case '-':
+            console.log(num1_3 - num2_3);
+            break;
+        default:
+            console.log('Operador inválido');
     }
 }
-calculadora(2, 5);
-    
-*/
+
+calculator();
+
+
+
+
 //   2.
 /*
-function mediaNotas(nota1, nota2, nota3, nota4, nota5){
-    return nota1 + nota2 + nota3 + nota4 + nota5 
+function notas(cincoNotas = []){
+    var somaNotas = cincoNotas[0] + cincoNotas[1] + cincoNotas[2] + cincoNotas[3] +
+    cincoNotas[4];
+    return 
 }
-var notasAluno = [3, 5, 6, 7, 8]
+var notasAluno = mediaNotas [3, 5, 6, 7, 8] / 5
 console.log(notasAluno)
-*/
+
 //                               EXEMPLO(AULA DIA 06/03)
 /*
 function calculaArea(base, altura){
@@ -666,5 +689,5 @@ console.log(pegaValores());
    * Retirar o recipiente com oleo velho de baixo do motor
    * Colocar a litragem de oleo correta no motor
    *  
-
+*/
 
