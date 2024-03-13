@@ -593,7 +593,7 @@ function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
 console.log(podeEntrarNaFaculdade(prompt("Você concluiu o ensino médio?"),Number(prompt("Qual a sua idade?")),prompt("Você já estuda em uma faculdade?")));
 */
 //                       exercicio complementar (aula 8)
-//   1.
+//   1. CALCULADORA
 /*
 function calculadora(num1, num2){
     
@@ -602,8 +602,8 @@ function calculadora(num1, num2){
 var resultado = calculadora(3, 5)
 console.log(resultado)
 */  
-//   2.
-
+//   2. TIRANDO A MEDIA DE NOTAS
+/*
 function notas(){
     var cincoNotas = [];
         for(var i = 1; i <= 5; i++){
@@ -619,6 +619,13 @@ function notas(){
 console.log(notas)
 // var notasAluno = mediaNotas [3, 5, 6, 7, 8] / 5
 //console.log(notas)
+*/
+//   3. PALINDROMOS
+/*
+function palindromo(){
+
+}
+/*
 
 //                               EXEMPLO(AULA DIA 06/03)
 /*
@@ -671,3 +678,106 @@ console.log(pegaValores());
    * Verificar o nivel de oleo na vareta
    
 */
+
+//                            AULA 9 ( LAÇO WHILE( "enquanto" ))               
+/*
+//   EXEMPLO 1 - IMPRIMINDO NUMEROS
+let i = 0
+while (i < 10){
+    console.log(i)
+    i++
+}
+*/
+/*
+let estomago = 0;
+while(estomago < 100){
+    console.log("Quero comer mais coxinhas");
+    estomago = estomago + 10;
+}
+*/
+//                            exercicio 1 (aula 9)
+/*
+function numero(){
+    let i = 0
+    while(i <= 0){
+        console.log (prompt("Digite um numero"))
+       // i++
+   }
+    
+}
+numero()
+*/
+/*
+function somarNumeros(){
+    let soma = 0;
+    let numero = 1;
+    while (numero !== 0){
+        numero = Number(prompt("Digite um numero ( ou 0 para sair):"));
+        soma += numero;
+    }
+    console.log(`A soma dos numeros digitados é: ${soma}`);
+}
+somarNumeros();
+*/
+//                            LAÇO FOR(" para") (aula 9)
+/*
+for(let i = 0; i < 10; i++){
+    console.log(i) // imprime de 0 a 10 na tela
+}
+*/
+/*
+const numeros = [14, 67, 89, 15, 23]
+for(let i = 0; i < numeros.length; i++){
+    const elemento = numeros[i]
+    console.log(elemento)
+}
+*/
+//           EXEMPLO DA APOSTILA
+/*
+const numeros = [11, 15, 18, 14, 12, 13]
+
+function devolveMaiorNumero(array) {
+
+let maiorNumero = 0
+
+for(let i = 0; i < array.length; i++) {
+let numeroAtual = array[i]
+
+if(numeroAtual >= maiorNumero) {
+maiorNumero = numeroAtual
+}
+}
+
+console.log(`O maior número do array é ${maiorNumero}`)
+}
+
+devolveMaiorNumero(numeros)
+*/
+/*
+function valorMaior(array){
+    var numeroMaior = array[0];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if(element > numeroMaior){
+            numeroMaior = element
+        }
+    }
+    return numeroMaior;
+}
+var meuArray = [10, 20, 30, 50, 80, 1, 99, 4, 60]
+console.log(valorMaior(meuArray));
+*/
+//                           TESTE REALIZADO PELO PROFESSOR
+
+function somarNumerosComArray(){
+    var numeros = [];
+    var numero = 1;
+    while(numero !== 0){
+        numero = Number(prompt("Digite um número ou 0 para sair"));
+        numeros.push(numero)
+    }
+    var soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+    return soma 
+}
+console.log(somarNumerosComArray());
+
