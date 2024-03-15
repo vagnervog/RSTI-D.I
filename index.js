@@ -451,7 +451,7 @@ function comparaNumeros(num1, num2){
 }
 console.log(comparaNumeros(prompt("Digite um número"), prompt("Digite outro número")));
 */
-//                              >>> EXEMPLO de if + else + if <<<
+//                       >>> EXEMPLO de if + else + if <<<
 /*
 let condicao1 = false
 let condicao2 = true
@@ -604,28 +604,182 @@ console.log(resultado)
 */  
 //   2. TIRANDO A MEDIA DE NOTAS
 /*
-function notas(){
-    var cincoNotas = [];
-        for(var i = 1; i <= 5; i++){
-            var cincoNotas = prompt("Digite a sua nota" +i+":");
-            notas.push(cincoNotas);
+function notas(array){     // 1° TENTATIVA
+    var array = [];
+    var somaNotas = 0;
+    var mediaNotas
+        while(array <= 5){
+            console.log(prompt("Digite a sua nota" +array+":"));
+            //cincoNotas++;
+            somaNotas = somaNotas + array;
+            //mediaNotas = mediaNotas / 5
         }
-        var soma = 0;
-        for(var j = 0; j < cincoNotas.length; j++){
-            soma += cincoNotas[j]
-        }
-        var media = soma/cincoNotas.length;
+        mediaNotas = somaNotas / 5
 }
-console.log(notas)
+console.log(notas())
 // var notasAluno = mediaNotas [3, 5, 6, 7, 8] / 5
 //console.log(notas)
-*/
-//   3. PALINDROMOS
-/*
-function palindromo(){
 
-}
 /*
+ function mediaNotas(){    // 2° TENTATIVA
+    var notas = [];
+    var soma = 0;
+    var resultado;
+    for(let notas = 0; notas <= 5; notas++){
+        notas = (prompt("Digite a sua nota:"));
+        notas.push(soma);
+    }
+ }
+ mediaNotas();
+ */
+
+// >>>> OBTIDO NO GEMINI
+/*
+ function calcularMedia(notas) {
+    // Soma todas as notas
+    let somaNotas = 0;
+    for (let nota of notas) {
+      somaNotas += nota;
+    }
+  
+    // Calcula a média dividindo a soma pelo número de notas
+    let media = somaNotas / notas.length;
+  
+    // Retorna a média
+    return media;
+  }
+  
+  // Exemplo de uso da função
+  const notasAluno = [7.5, 8.0, 9.5, 10.0];
+  const mediaAluno = calcularMedia(notasAluno);
+  
+  console.log(`A média do aluno é: ${mediaAluno}`);
+  */
+/*
+  Explicação do código: CALCULAR MEDIA DE NOTAS COM ARRAY NO CÓDIGO
+
+A função calcularMedia recebe um array de números como parâmetro.
+A função usa um loop for para percorrer o array e somar todas as notas.
+A função calcula a média dividindo a soma das notas pelo número de notas.
+A função retorna a média.
+Exemplo de uso:
+
+O código cria um array com as notas de um aluno.
+O código chama a função calcularMedia e passa o array de notas como parâmetro.
+O código imprime a média do aluno no console.
+Outras opções:
+
+Você pode usar a função reduce() para calcular a soma das notas e depois dividir por notas.length para calcular a média.
+Você pode usar a função map() para converter as notas para números (caso sejam strings) antes de calcular a média.
+*/
+
+
+ // Função para calcular a média das notas de um aluno  >>> OBTIDO NO GEMINI
+ /*
+ function calcularMedia() {
+    // Obtém as notas do usuário através do prompt
+    const notas = prompt("Digite as notas do aluno (separadas por vírgula):").split(",");
+  
+    // Converte as notas para números
+    const notasNumericas = notas.map(Number);
+  
+    // Valida se todas as notas são números
+    if (notasNumericas.some(isNaN)) {
+      alert("Erro: Uma ou mais notas inválidas. Digite apenas números.");
+      return;
+    }
+  
+    // Soma todas as notas
+    let somaNotas = 0;
+    for (let nota of notasNumericas) {
+      somaNotas += nota;
+    }
+  
+    // Calcula a média dividindo a soma pelo número de notas
+    let media = somaNotas / notasNumericas.length;
+  
+    // Retorna a média
+    return media;
+  }
+  
+  // Exemplo de uso da função
+  const mediaAluno = calcularMedia();
+  
+  if (mediaAluno !== undefined) {
+    console.log(`A média do aluno é: ${mediaAluno}`);
+  }
+*/
+/*
+Explicação do código: CALCULAR MÉDIA DE NOTAS COM ARRAY OBTIDO NO PROMPT
+
+A função calcularMedia não recebe nenhum parâmetro.
+A função obtém as notas do usuário através do prompt.
+A função converte as notas para números.
+A função valida se todas as notas são números.
+A função calcula a média das notas.
+A função retorna a média.
+Exemplo de uso:
+
+O código chama a função calcularMedia.
+Se a função retornar um valor (ou seja, se não houver erros), o código imprime a média do aluno no console.
+Melhorias:
+
+Você pode adicionar validação para garantir que o usuário digite pelo menos uma nota.
+Você pode formatar a saída da média para duas casas decimais.
+Você pode adicionar mensagens de erro mais específicas para diferentes tipos de erros.
+*/
+
+//   3. VERIFICADOR DE PALINDROMOS  <<< OBTIDO NO GEMINI
+/*
+function verificarPalindromo() {
+  // Obtém a palavra do usuário através do prompt
+  const palavra = prompt("Digite uma palavra:").toLowerCase();
+
+  // Remove espaços da palavra
+  const palavraSemEspacos = palavra.replace(/\s/g, "");
+
+  // Converte a palavra para um array
+  const letras = palavraSemEspacos.split("");
+
+  // Inverte o array
+  letras.reverse();
+
+  // Reconverte o array para uma string
+  const palavraInvertida = letras.join("");
+
+  // Retorna true se a palavra original e a palavra invertida forem iguais
+  return palavraSemEspacos === palavraInvertida;
+}
+// Exemplo de uso da função
+const ehPalindromo = verificarPalindromo();
+
+if (ehPalindromo) {
+  console.log("A palavra é um palíndromo!");
+} else {
+  console.log("A palavra não é um palíndromo.");
+}
+*/
+/*
+Explicação do código: VERIFICADOR DE PALINDROMOS
+
+A função verificarPalindromo não recebe nenhum parâmetro.
+A função obtém a palavra do usuário através do prompt.
+A função remove espaços da palavra.
+A função converte a palavra para um array.
+A função inverte o array.
+A função reconverte o array para uma string.
+A função retorna true se a palavra original e a palavra invertida forem iguais.
+Exemplo de uso:
+
+O código chama a função verificarPalindromo.
+Se a função retornar true, o código imprime a mensagem "A palavra é um palíndromo!".
+Se a função retornar false, o código imprime a mensagem "A palavra não é um palíndromo.".
+Melhorias:
+
+Você pode adicionar validação para garantir que o usuário digite uma palavra.
+Você pode adicionar mensagens de erro mais específicas para diferentes tipos de erros.
+Você pode usar uma expressão regular para remover caracteres especiais da palavra antes de verificar se ela é um palíndromo.
+*/
 
 //                               EXEMPLO(AULA DIA 06/03)
 /*
@@ -679,7 +833,7 @@ console.log(pegaValores());
    
 */
 
-//                            AULA 9 ( LAÇO WHILE( "enquanto" ))               
+//                            AULA 9 (LAÇO WHILE( "enquanto" ))               
 /*
 //   EXEMPLO 1 - IMPRIMINDO NUMEROS
 let i = 0
@@ -702,8 +856,7 @@ function numero(){
     while(i <= 0){
         console.log (prompt("Digite um numero"))
        // i++
-   }
-    
+   }   
 }
 numero()
 */
@@ -768,7 +921,7 @@ var meuArray = [10, 20, 30, 50, 80, 1, 99, 4, 60]
 console.log(valorMaior(meuArray));
 */
 //                           TESTE REALIZADO PELO PROFESSOR
-
+/*
 function somarNumerosComArray(){
     var numeros = [];
     var numero = 1;
@@ -780,4 +933,5 @@ function somarNumerosComArray(){
     return soma 
 }
 console.log(somarNumerosComArray());
+*/
 
